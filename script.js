@@ -10,13 +10,6 @@ window.addEventListener('load', () => {
     
 });
 
-const urlParams = new URLSearchParams(window.location.search);
-const guestName = urlParams.get('to');
-if (guestName) {
-    const guestElem = document.getElementById('guest-name');
-    if (guestElem) guestElem.innerText = guestName;
-}
-
 function openWedding() {
     const cover = document.getElementById('cover');
     const mainContent = document.getElementById('main-content');
